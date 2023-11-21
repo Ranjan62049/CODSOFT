@@ -1,0 +1,303 @@
+*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+
+		}
+		body{
+			font-family: Open-Sans, sans-serif;
+           background:url(image/back.png); 
+          
+           
+           
+		}
+
+		header{
+			top: 0;
+			display: inline-block;
+			width: 100%;
+			padding: 25px 80px;
+			background-color:darkcyan;
+			position: fixed;
+            overflow: hidden;
+
+
+		}
+		.logo{
+			float: left;
+
+		}
+		nav{
+			float: right;
+
+		}
+		nav ul li{
+			display: inline-block;
+			padding: 15pxn 25px;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+		     display: inline-block;	
+		     color: #000;
+		     font-weight: 600;
+		     padding: 10px;
+		}
+
+		nav ul li a:hover{
+			background-color: red;
+			border-radius: 30px;
+			font-size: 20px;
+		}
+
+
+		.toggle-btn{
+			width: 35px;
+			position: absolute;
+			right: 80px;
+			top: 40px;
+			display: none;
+
+		}
+		.toggle-btn span{
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			float: left;
+			margin-bottom: 8px;
+		}
+
+		@media (max-width: 991px)
+		{
+			.toggle-btn{
+				display: block;
+			}
+			nav{
+				display: none;
+				width: 100%;
+				border-top: 1px solid #000;
+				padding-top: 20px;
+				margin-top: 30px;
+			}
+
+			nav ul li{
+				padding: 15px 0px;
+				width: 100%;
+			}
+
+			nav.show{
+				display:block;
+			}
+		}
+
+	.logo img{
+			width: 30px;
+	     	float: left;
+		   margin-left: 60px;
+		  border-radius: 50%;
+	 }
+
+	.logo a{
+	     float: left;
+	    margin-left: 32PX;
+       color: darkgrey;
+      text-decoration: none;
+      font-size: 17px;
+     font-family:cursive;
+    }
+
+    .intro{
+	width: 100%; 
+	 text-align: center;
+	 color: white;
+	 background-color:blue;
+	 padding: 20px;
+	font-size: 20px;
+	border-radius: 25%;
+	margin-top: 15%;
+}
+.intro img{
+	width: 10%;
+	border-radius: 50%;
+	}
+
+ 
+
+.ab{
+
+	width: 100%;
+	 
+	 text-align: center;
+	 color: black;
+	 background-color:pink;
+	 padding: 20px;
+	 font-size: 18px;
+	 border-radius: 30%;
+
+}
+.ab img{
+
+	width: 10%;
+	border-radius: 50%;
+
+} 
+
+ 
+ 
+.second h1{
+	width: 100%;
+	margin-top: 15%;
+	font-size: 50px;
+	color: blue;
+	border-radius: 50%;
+	text-align: center;
+
+
+
+}
+
+
+.ed{
+	 
+	width: 100%;
+	border: 2px groove white;
+	 text-align: center;
+	 color: black;
+	 background-color:#EEE7A9;
+	 padding: 20px;
+	font-size: 20px;
+	border-radius: 40%;
+	
+
+}
+
+.project{
+	width: 100%;
+	border: 2px groove white;
+	 text-align: center;
+	 color: darkred;
+	 background-color:darkgrey;
+	 padding: 20px;
+	font-size: 20px;
+	
+	 
+
+}
+
+ 
+
+ .container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+}
+
+form h3{
+	color:blue;
+	font-size: 40px;
+    text-align: center;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+form input, form textarea{
+	border:0;
+	color: blue;
+	margin:10px 0;
+	padding: 20px;
+	outline: none;
+	font-size: 25px;
+	border-radius: 20px;
+}
+
+form button{
+	padding: 15px;
+	background:blue;
+	color: #fff;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin:20px auto 0;
+	border-radius: 20px;
+}
+form button:hover{
+	width: 60%;
+	color: black;
+	background-color:red;
+	 
+
+}
+
+ .resume{
+	 width: 100%;
+	 text-align: center;
+	 color: darkred;
+	 padding: 25px;
+	font-size: 20px;
+	margin:15% 0 15% 0;
+}
+.resume a:hover{
+	font-size: 30px;
+}
+ 
+
+ footer {
+  padding: 3px;
+  background-color:black;
+  color: white;
+  display: flex;
+
+}
+.copy{
+		text-align: center;
+		font-size: 15px;
+		background-color: black	;
+		color: 	white;
+}
+.use{
+	width: 30%; 
+	margin-left: 10%;
+	text-decoration: none;
+	padding: 20px;	
+}
+.use a{
+	color: white;
+	text-decoration: none;
+
+}
+ 
+ 
+.cont{
+	width:30%;
+	text-align: center;
+    padding: 20px;
+
+    
+}
+.cont a{
+	color: white;
+	text-decoration: none;
+}
+.flo{
+	width:30%;
+	text-align: center;
+    padding: 20px;
+     
+}
+
+.flo a{
+	text-decoration: none;
+	padding: 30px;
+}
