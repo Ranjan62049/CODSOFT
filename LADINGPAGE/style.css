@@ -1,0 +1,329 @@
+* { 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+} 
+
+body { 
+	background-color:#B6FDFA; 
+	color:white; 
+	font-family:cursive;	 
+	  
+} 
+/*heder css start*/
+		header{
+			top: 0;
+			display: inline-block;
+			width: 100%;
+			padding: 25px 80px;
+			position: relative;
+			color: black;
+		}
+		 
+		nav{
+			float: right;
+
+
+		}
+		nav ul li{
+			display: inline-block;
+			padding: 15pxn 25px;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+		     display: inline-block;	
+		     color: white;
+		     font-weight: 600;
+		     padding:15px;
+		     border-radius:30px;
+		     background-color:blue;
+
+		}
+		nav ul li a:hover{
+			background-color:red;
+			border-radius: 	30px;
+			padding: 15px;
+		}
+		.toggle-btn{
+			width: 35px;
+			position: absolute;
+			right: 80px;
+			top: 40px;
+			display: none;
+
+		}
+		.toggle-btn span{
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+			background-color:blue;
+			float: left;
+			margin-bottom: 8px;
+		}
+
+		@media (max-width: 991px)
+		{
+			.toggle-btn{
+				display: block;
+			}
+			nav{
+				display: none;
+				width: 100%;
+				border-top: 1px solid #000;
+				padding-top: 20px;
+				margin-top: 30px;
+			}
+
+			nav ul li{
+				padding: 15px 0px;
+				width: 100%;
+			}
+
+			nav.show{
+				display:block;
+			}
+		}
+ 
+
+
+/*heder css end here*/
+ 
+
+
+ 
+/*menu css start*/
+ 
+.line { 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	margin: 2% 5%; 
+
+} 
+
+.line .side1 { 
+	padding-right: 50px; 
+} 
+
+.side1 h2{
+	color: blue;
+}
+
+.side1 video{ 
+	margin-top: 20%;
+	border-radius: 30px;
+	width: 200px; 
+	 
+}
+.side1 video:hover{
+	width: 250px;
+
+}	 
+
+ 
+.content .title { 
+    width: 80%; 
+    margin-left: 100px; 
+    font-weight: bolder; 
+    font-size: 40px; 
+    color: red;
+} 
+  
+.title { 
+    margin-bottom: 30px; 
+    
+}
+ 
+
+/* Header responsive */
+@media screen and (max-width: 980px) { 
+	.side2 img { 
+		width: 350px; 
+	} 
+
+	.line { 
+		margin-top: 80px; 
+	} 
+} 
+
+@media screen and (max-width: 600px) { 
+
+	.line { 
+		flex-direction: column; 
+	} 
+
+	.line .side1 { 
+		padding: 30px; 
+	} 
+} 
+
+/* section */
+
+ 
+.about .boxes { 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: space-between; 
+	background-color:#767C7B;
+} 
+
+.about .boxes .box { 
+	margin: 10px 20px; 
+	max-width: calc(100% / 3 - 50px); 
+	padding: 10px; 
+	 
+   
+} 
+.about .boxes .box video:hover{
+		 width: 300px;
+		 border-radius: 20px;
+		 display: block;
+
+}
+
+/* Contact start  here*/
+
+.contact { 
+	padding: 20px; 
+	background-color: #FA89C2;
+} 
+
+.contact .content { 
+	margin: 0 auto; 
+	padding: 30px 0; 
+	 
+} 
+
+.contactMenu { 
+	display: flex; 
+	justify-content: space-evenly; 
+} 
+
+.input2 { 
+	margin-top: 10; 
+} 
+
+.lbl { 
+	font-size: 18px; 
+	margin-top: 8px; 
+	margin-bottom: 8px; 
+	font-weight: bolder; 
+	color: blue;
+} 
+
+.contactMenu .input1 input { 
+	border-radius: 10px;
+	color: red; 
+	font-size: 15px;
+	font-weight: bolder;
+	padding: 6px; 
+
+} 
+
+.input2 input {  
+	width: 400px; 
+} 
+
+.button { 
+	margin-top: 12px; 
+	margin-left: 5px; 
+} 
+ 
+button{ 
+	width: 162px; 
+	height: 35px;
+	font-size: 22px;
+	border-radius: 15px;	 
+} 
+.button button:hover{
+	color: white;
+	background-color: black;
+	
+} 
+ 
+
+.right { 
+	display: flex; 
+	flex-direction: column; 
+	margin-left: 300px; 
+} 
+
+.ti { 
+	font-size: 18px; 
+	margin-top: 8px; 
+	margin-bottom: 5px; 
+	font-weight: bolder; 
+} 
+
+.cont { 
+	width: 450px; 
+	margin-top: 2px; 
+	color:black; 
+	padding: 10px;
+	font-size: 16px;
+} 
+
+/*contact end here*/
+
+/* Footer start here*/
+footer { 
+	 text-align: center;
+	 background-color: black;
+} 
+
+footer .footer span { 
+	font-size: 17px; 
+	font-weight: 400; 
+	color: var(--white-color); 
+} 
+
+footer .footer span a { 
+	font-weight: 500; 
+	 color: white;
+} 
+
+ 
+
+@media screen and (max-width: 1060px) { 
+	.contactMenu { 
+		flex-direction: column; 
+		align-items: center; 
+	} 
+
+	.right { 
+		display: flex; 
+		flex-direction: column; 
+		margin-left: 0px; 
+	} 
+
+	.cont { 
+		width: 100%; 
+		margin-top: 2px; 
+		color: black; 
+	} 
+
+	.side2 img { 
+		width: 95%; 
+		height: 90%; 
+	} 
+} 
+
+@media screen and (max-width: 600px) { 
+	.side2 img { 
+		width: 100%; 
+	} 
+
+	.about .boxes { 
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+
+	} 
+
+	.about .boxes .box { 
+		max-width: 70%; 
+	}
+
+	 
+}
