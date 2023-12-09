@@ -1,0 +1,78 @@
+/* FOR ALL CONTENT OF BODY CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+/*FOR BODY CONTENT CSS*/
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+/*FOR DIGITAL FONT ADDING CSS*/
+
+@font-face{
+    font-family: digital;
+    src:url(digital.ttf);
+}
+
+/*CALCULATOR CSSS*/
+
+.calculator{
+    padding: 15px;
+    border-radius: 25px;
+    background:#03fceb;
+}
+
+/*INPUT BOX OF CALCULATOR CSS*/
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background:#d1e0e0;
+    font-size: 45px;
+    text-align:right;
+    color:black;
+    border-radius:15px;
+    font-family:digital;
+}
+
+ 
+
+/*BUTTON OF CALCULATOR*/
+
+button{
+    border: 1px solid blue;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius:15%;
+    background:#f0f7f6;
+    color:black;
+    font-size: 30px;
+    font-family: digital;
+    font-weight:bolder;
+}
+button:hover{
+    background:blue;
+    color: white;
+}
+
+.equalBtn{
+    background-color:darkgray;
+    color: black;
+}
+
+.operator{
+    color:blue;
+    font-family: digital;
+}
